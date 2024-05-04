@@ -13,6 +13,9 @@ export default function Header() {
 						<Link href="/dashboard">Dashboard</Link>
 					</li>
 					<li className="px-4">
+						<Link href="/account">Account</Link>
+					</li>
+					<li className="px-4">
 						<Link href="/about">About</Link>
 					</li>
 					<li className="px-4">

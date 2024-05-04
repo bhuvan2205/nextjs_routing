@@ -2,34 +2,18 @@ import { ReactNode } from "react";
 
 export default function Layout({
 	children,
-	analytics,
 	posts,
-	payments,
+	analytics,
 }: {
 	children: ReactNode;
-	analytics: ReactNode;
 	posts: ReactNode;
-	payments: ReactNode;
+	analytics: ReactNode;
 }) {
-	const user = getUser();
-
-	if (!user.hasAccess) {
-		return payments;
-	}
-
 	return (
 		<div className="grid place-items-center w-full gap-4 my-8">
 			{children}
-			{analytics}
 			{posts}
+			{analytics}
 		</div>
 	);
 }
-
-export const getUser = () => {
-	return {
-		id: 1,
-		name: "john",
-		hasAccess: true,
-	};
-};
