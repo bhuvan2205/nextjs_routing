@@ -1,5 +1,31 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+```
+# Templates in Routing
+(template.tsx)
+
+Will re-render every time if any changes in the url change
+Better use case will be add google analytics based on the user interaction
+
+# Router Grouping
+(group)
+Will be used for either organizational purpose or to handle the additional logic
+May have separate layout file apart from the RootLayout
+
+# Parallel Routing
+@route
+Enable us to render multiple routes inside the single layout to handle complex logic
+
+# Routing Interceptors
+(.)route
+Will help us to intercept the route based on the needs
+
+# Route handlers
+route.ts
+Will help us to server api data/response
+
+````
+
 ## Getting Started
 
 First, run the development server:
